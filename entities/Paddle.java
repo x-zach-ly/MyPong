@@ -22,4 +22,12 @@ public class Paddle {
         height = 50;
         width = 10;
     }
+
+    public int getXpos() {
+        return xpos;
+    }
+
+    public int getYpos() {
+        return ypos;
+    }
 }
