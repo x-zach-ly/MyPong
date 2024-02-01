@@ -27,7 +27,39 @@ public class Paddle {
         return xpos;
     }
 
+    public void setXpos(int x) {
+        xpos = x;
+    }
+
     public int getYpos() {
         return ypos;
+    }
+
+    public void setYpos(int y) {
+        ypos = y;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getYvel() {
+        return yvel;
+    }
+
+    public void setYvel(int yvel) {
+        this.yvel = yvel;
     }
 }

@@ -1,5 +1,6 @@
 package main;
 
+import entities.Ball;
 import entities.Paddle;
 
 public class Game {
@@ -7,13 +8,15 @@ public class Game {
     private GamePanel gamePanel;
     private Paddle player1;
     private Paddle player2;
+    private Ball ball;
 
     public Game() {
-        gamePanel = new GamePanel();
+        ball = new Ball();
+        player1 = new Paddle(20, 150);
+        player2 = new Paddle(340, 150);
+
+        gamePanel = new GamePanel(player1, player2);
         gameWindow = new GameWindow(gamePanel);
         gamePanel.requestFocus();
-
-        player1 = new Paddle(20, 150);
-        player2 = new Paddle(320, 150);
     }
 }
