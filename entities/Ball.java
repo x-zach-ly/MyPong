@@ -10,8 +10,8 @@ public class Ball {
 
     public Ball() {
         xpos = 200;
-        ypos = 200;
-        xvel = 10;
+        ypos = 180;
+        xvel = 1;
         yvel = 0;
         side = 10;
         direction = 0;
