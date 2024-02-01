@@ -11,6 +11,7 @@ public class Game {
     public Game() {
         gamePanel = new GamePanel();
         gameWindow = new GameWindow(gamePanel);
+        gamePanel.requestFocus();
 
         player1 = new Paddle(20, 150);
         player2 = new Paddle(320, 150);
